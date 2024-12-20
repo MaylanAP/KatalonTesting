@@ -28,7 +28,7 @@ Feature: Login as Customer
     Given I open the website XYZ Bank
     When I click button customer login
     And I click button drop down
-    And I click <username>
+    And I input <username>
     And I click button login
     Then I see <account>
 

@@ -54,10 +54,10 @@ class home {
 		WebUI.delay(1)
 	}
 
-	@When("I click button customer login")
-	def I_click_button_customer_login() {
-		WebUI.click(findTestObject('home/button_Customer Login'))
-	}
+//	@When("I click button customer login")
+//	def I_click_button_customer_login() {
+//		WebUI.click(findTestObject('home/button_Customer Login'))
+//	}
 
 	@Then("I see login page customer")
 	def I_see_login_page_customer() {

@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "527F8BE683C4810E9FBCD4344223407E",
+  "keywordFileContentHash": "F708BD50A72D3EED3183F8076A94AF6B",
   "keywordClasses": [
     {
       "name": "home",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

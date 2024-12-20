@@ -44,21 +44,21 @@ import cucumber.api.java.en.When
 
 
 class loginStep {
-//	@When ("I click button customer login")
-//	def I_click_button_customer_login() {
-//		WebUI.click(findTestObject('Object Repository/home/button_Customer Login'))
-//	}
+	@When ("I click button customer login")
+	def I_click_button_customer_login() {
+		WebUI.click(findTestObject('Object Repository/home/button_Customer Login'))
+	}
 	
 	@When("I click button drop down")
 	def I_click_button_drop_down() {
 		WebUI.click(findTestObject('Cust Profile/DropDownName'))
 	}
 
-	@When("I click (.*)")
-	def I_click_username(String username){
-		if (username) {
+	@When("I input (.*)")
+	def I_input_username(String username){
+		if (username == "Hermoine Grager") {
 			WebUI.click(findTestObject('CustLog/Hermoine Grager'), username)
-		} else if (username) {
+		} else if (username == "Harry Potter") {
 			WebUI.click(findTestObject('CustLog/Harry Potter'), username)}
 //		} else if (true) {
 //			WebUI.click(findTestObject('CustLog/Ron Weasly'))
@@ -75,9 +75,9 @@ class loginStep {
 	}
 	@Then("I see (.*)")
 	def I_see_username(String account){
-		if (account1) {
+		if (account) {
     WebUI.verifyElementPresent(findTestObject('CustLog/span_Hermoine Granger'), 0, FailureHandling.STOP_ON_FAILURE)
-} else if (account2) {
+} else if (account) {
     WebUI.verifyElementText(findTestObject('CustLog/span_Harry Potter'), '')
 }
 	}
